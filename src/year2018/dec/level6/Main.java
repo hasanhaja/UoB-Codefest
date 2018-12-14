@@ -17,7 +17,7 @@ public class Main {
                 Main::challenge1,
                 Main::challenge2,
                 Main::challenge3,
-                Main::challenge4,
+                //Main::challenge4, // JavaFX not included in java 11
                 Main::challenge5
         };
 
@@ -59,10 +59,10 @@ public class Main {
         test(c.challenge3(input3, input4) == 137);
     }
 
-    private static void challenge4() {
-        test(c.challenge4(javafx.geometry.Point2D.class, 10.0, 15.0).equals(new javafx.geometry.Point2D(10.0, 15.0)));
-        test(c.challenge4(java.awt.Point.Double.class, -33.0, 15.0).equals(new java.awt.Point.Double(-33.0, 15.0)));
-    }
+//    private static void challenge4() {
+//        test(c.challenge4(javafx.geometry.Point2D.class, 10.0, 15.0).equals(new javafx.geometry.Point2D(10.0, 15.0)));
+//        test(c.challenge4(java.awt.Point.Double.class, -33.0, 15.0).equals(new java.awt.Point.Double(-33.0, 15.0)));
+//    }
 
     private static void challenge5() {
         String input1 = "public int f(int i){return 3+5;}";
